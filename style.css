@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: DINosaur;
+  src: url(fonts/Light.otf);
+}
+
+@font-face {
+  font-family: DINosaurLightItalic;
+  src: url(fonts/LightItalic.otf);
+}
+
+@font-face {
+  font-family: DINosaurBook;
+  src: url(fonts/Book.otf);
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-y: hidden;
+  /* background-image: url("images/1.png"); */
+  background-color: whitesmoke;
+  font-family: "DINosaur", sans-serif;
+  /* font-smooth: always; */
+  /* text-rendering: optimizeLegibility; */
+}
+
+/* ::selection {
+  background: grey;
+} */
+
+
+@media (max-width: 500px) {
+#AboutText {
+  width: 90% !important;
+  /* background-color: pink; */
+}
+}
+
+
+@media (max-width: 1125px) {
+.ArrowIntro {
+  position: absolute;
+  background-image: url("images/arrowIntro.png");
+  /* display: block; */
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  /* background-color: pink; */
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  pointer-events: none;
+  /* mix-blend-mode: darken; */
+  animation-name: introfade;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+h2 {
+  font-size: 1em;
+}
+}
+
+@keyframes introfade {
+  from {opacity: 1}
+  to {opacity: 0}
+}
+
+a {
+  color: grey;
+}
+
+a:hover {
+  color: red !important;
+  cursor: url("images/Jack_Cursor_Outline.png"), auto;
+}
+
+/* a:visited {
+  color: black;
+} */
+h1 {
+  font-size: 1.5em;
+  color: black;
+}
+
+h1:hover {text-decoration: overline;}
+
+p {
+  font-family: "DINosaurBook"!important;
+  /* src: url(fonts/book.otf); */
+  font-size: 1em;
+  color: black;
+}
+
+span {
+    font-family: "DINosaurLightItalic";
+}
+
+.Mediumwhite {
+  color: white;
+  font-family: "DINosaurLightItalic";
+}
+
+#AboutOverlay {
+  position: fixed;
+  display: none;
+  opacity: 0.85;
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  cursor: url("images/Jack_Cursor_Outline.png"), auto;
+  z-index: 2;
+}
+
+
+/* .flowerboy {
+  position: absolute;
+  width: 10px;
+  fill: black;
+} */
+
+#AboutText {
+  position: fixed;
+  display: none;
+  opacity: 1;
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+  margin-top: 15vh;
+  margin-right: 5%;
+  /* background-color: blue; */
+  /* z-index: 1000; */
+  overflow: auto;
+}
+
+#MainContainer {
+  position: absolute;
+  /* background-image: url("images/1.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  /* background-color: pink; */
+  height: 100vh;
+  width: 100vw;
+}
+
+#slider {
+  text-align: center;
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+  Height: 8%;
+  bottom: -15%;
+  /* display: flex; */
+  /* margin: 0 auto; */
+  /* background-color: pink; */
+}
+
+.descriptionwhite {
+  color: white!important;
+  position: absolute;
+  width: 100%;
+  Height: 8%;
+  bottom: -15%;
+  /* display: flex; */
+  /* margin: 0 auto; */
+  /* background-color: pink; */
+}
+
+#BlackOverlay {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: white;
+  mix-blend-mode: difference;
+  display: none;
+  pointer-events: none;
+  /* cursor: url("images/Jack_Cursor_White.png"), auto; */
+}
+
+.slide {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  top: 15%;
+  left: 15%;
+  height: 70%;
+  width: 70%;
+  /* z-index: -1; */
+  /* background-color: blue; */
+}
+
+.slide1 {
+  background-image: url("images/1.jpg")
+}
+
+.slide2 {
+  background-image: url("images/2.jpg")
+}
+
+.slide3 {
+  background-image: url("images/3.jpg")
+}
+
+.slide4 {
+  background-image: url("images/4.jpg")
+}
+
+.slide5 {
+  background-image: url("images/5.jpg")
+}
+
+.slide6 {
+  background-image: url("images/6.jpg")
+}
+
+.slide7 {
+  background-image: url("images/7.jpg")
+}
+
+.slide8 {
+  background-image: url("images/8.jpg")
+}
+
+.slide9 {
+  background-image: url("images/9.jpg")
+}
+
+.slide10 {
+  background-image: url("images/10.jpg")
+}
+
+.slide11 {
+  background-image: url("images/11.jpg")
+}
+
+.slide12 {
+  background-image: url("images/12.jpg")
+}
+
+.slide13 {
+  background-image: url("images/13.jpg")
+}
+
+.slide14 {
+  background-image: url("images/14.jpg")
+}
+
+.slide15 {
+  background-image: url("images/15.jpg")
+}
+
+.slide16 {
+  background-image: url("images/16.jpg")
+}
+
+.slide17 {
+  background-image: url("images/17.jpg")
+}
+
+.slide18 {
+  background-image: url("images/18.jpg")
+}
+
+.slide19 {
+  z-index: 5000;
+  /* background-color: blue; */
+  /* mix-blend-mode: lighen; */
+  /* background-image: url("images/19.jpg") */
+}
+
+.slide20 {
+  background-image: url("images/_20.jpg")
+}
+
+.slide21 {
+  background-image: url("images/21.jpg")
+
+}
+
+#NextImage {
+  position: absolute;
+  height: 95vh;
+  width: 50vw;
+  bottom: 0%;
+  right: 0;
+  /* display: block; */
+  /* background-color: red; */
+  cursor: url("images/outline_arrow_next.png"), auto;
+  overflow: hidden;
+}
+
+#PrevImage {
+  position: absolute;
+  height: 95vh;
+  width: 50vw;
+  bottom: 0%;
+  left: 0;
+  /* display: ; */
+  /* background-color: pink; */
+  cursor: url("images/outline_arrow_prev.png"), auto;
+  overflow: hidden;
+}
+
+/* .ArrowIntro {
+  position: absolute;
+  background-image: url("images/arrowIntro.jpg");
+  display: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: pink;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  pointer-events: none;
+} */
+
+.Header {
+  /* position: absolute;
+  bottom: 0px; */
+  width: 100%;
+  Height: 8%;
+  display: flex;
+  cursor: url("images/Jack_Cursor.png"), auto;
+}
+
+.InnerHeader {
+  width: 90%;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.LogoContainer {
+  height: 100%;
+  display: table;
+  float: left;
+  /* background-color: pink; */
+}
+
+.LogoContainer a {
+  color: black;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.About {
+  height: 100%;
+  display: table;
+  float: right;
+}
+
+.About a {
+  color: black;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+}
